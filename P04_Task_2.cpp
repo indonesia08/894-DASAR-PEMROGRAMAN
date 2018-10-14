@@ -12,94 +12,84 @@ cout<<"_________________________________________________________________________
 cout<<"Masukan Kode Kereta [AG/AL/PH]	: ";cin>>kode_kereta;
 cout<<"\nPilih Kelas [1/2/3]\n1.Executive\n2.Bisnis\n3.Ekonomi";
 cout<<"\nMasukan kelas Kereta :";cin>>kelas_kereta;
-cout<<"\n__________________________________________________________________________\n";
 
 if (kode_kereta=="AG")
 	{
-  	   strcpy(nama_kereta,"Argo Bromo Anggrek");
-      if (kelas_kereta=='1')
-      	{
-		  	   strcpy(nama_kelas_kereta,"Execuive");
-            tarif =750000;
-         }
-      else if (kelas_kereta=='1')
-      	{
-		  	   strcpy(nama_kelas_kereta," kelas bisnis tidak tersedia untuk keret ini");
-            tarif =0;
-         }
-      else if (kelas_kereta=='1')
-      	{
-		  	   strcpy(nama_kelas_kereta," kelas ekonomi tidak tersedia untuk keret ini");
-            tarif =0;
-         }
-      else
-      	{
-         	denied ='1';
-         }
-   }
+		strcpy(nama_kereta,"Argo Bromo Anggrek");
+		if (kelas_kereta=='1')
+			{
+				strcpy(nama_kelas_kereta,"Execuive");
+				tarif =750000;
+			}
+		else if (kelas_kereta=='2')
+			{
+				strcpy(nama_kelas_kereta," kelas bisnis tidak tersedia untuk keret ini");
+				tarif =0;
+			}
+		else if (kelas_kereta=='3')
+			{
+				strcpy(nama_kelas_kereta," kelas ekonomi tidak tersedia untuk keret ini");
+				tarif =0;
+			}
+		else
+  			{
+     			denied ='1';
+     		}
+   	}
 
 else if (kode_kereta=="AL")
 	{
-  	   strcpy(nama_kereta,"Argo Bromo Anggrek");
-if (kode_kereta=="AG")
-	{
-  	   strcpy(nama_kereta,"Argo Bromo Anggrek");
-      if (kelas_kereta=='1')
-      	{
-		  	   strcpy(nama_kelas_kereta,"Execuive");
-            tarif =650000;
-         }
-      else if (kelas_kereta=='1')
-      	{
-		  	   strcpy(nama_kelas_kereta,"Bisnis");
-            tarif =500000;
-         }
-      else if (kelas_kereta=='1')
-      	{
-		  	   strcpy(nama_kelas_kereta," kelas ekonomi tidak tersedia untuk keret ini");
-            tarif =0;
-         }
+		strcpy(nama_kereta,"Senja Utama Yogya");
+		if (kelas_kereta=='1')
+			{
+				strcpy(nama_kelas_kereta,"Execuive");
+     			tarif =650000;
+			}
+  		else if (kelas_kereta=='2')
+  			{
+				strcpy(nama_kelas_kereta,"Bisnis");
+     			tarif =500000;
+     		}
+  		else if (kelas_kereta=='3')
+  			{
+				strcpy(nama_kelas_kereta," kelas ekonomi tidak tersedia untuk keret ini");
+     			tarif =0;
+			}
       else
       	{
-         	denied ='1';
-         }
+      		denied ='1';
+      	}
    }
 
 else if (kode_kereta=="PH")
 	{
-  	   strcpy(nama_kereta,"Senja Utama Yogya");
-if (kode_kereta=="AG")
-	{
-  	   strcpy(nama_kereta,"Argo Bromo Anggrek");
-      if (kelas_kereta=='1')
+		strcpy(nama_kereta,"Serayu");
+		if (kelas_kereta=='1')
       	{
-		  	   strcpy(nama_kelas_kereta," kelas executive tidak tersedia untuk keret ini");
-            tarif =0;
+				strcpy(nama_kelas_kereta," kelas executive tidak tersedia untuk keret ini");
+         	tarif =0;
          }
-      else if (kelas_kereta=='1')
+      else if (kelas_kereta=='2')
       	{
-		  	   strcpy(nama_kelas_kereta,"Bisnis");
-            tarif =200000;
-         }
-      else if (kelas_kereta=='1')
+				strcpy(nama_kelas_kereta,"Bisnis");
+         	tarif =200000;
+      	}
+      else if (kelas_kereta=='3')
       	{
-		  	   strcpy(nama_kelas_kereta,"Ekonomi");
-            tarif =150000;
+				strcpy(nama_kelas_kereta,"Ekonomi");
+         	tarif =150000;
          }
       else
       	{
-         	denied ='1';
-         }
+      		denied ='1';
+      	}
    }
 else
 	{
- 	   strcpy(nama_kereta,"Senja Utama Yogya");
-		  	   strcpy(nama_kelas_kereta,"Ekonomi");
-            tarif =150000;
-      
-   }
+   	denied ='0';
+	}
 
-
+cout<<"\n__________________________________________________________________________\n";
 cout<<"Nama Buku 			="<<kode_kereta<<endl;
 cout<<"Harga Buku 			="<<nama_kereta<<endl;
 cout<<"Potongan 			="<<nama_kelas_kereta<<endl;
