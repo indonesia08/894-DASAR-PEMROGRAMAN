@@ -68,7 +68,6 @@ cout<<"PPN 				="<<ppn<<endl;
 cout<<"________________________________________________________\n\n";
 cout<<"			*** T E R I M A K A S I H ***\n\n";
 cout<<'\n';
-cout<<nama<<" "<<harga<<endl;
 cout<<"\n Reload Program : ";
 lagi = getche();
 if (lagi =='Y' || lagi =='y')
