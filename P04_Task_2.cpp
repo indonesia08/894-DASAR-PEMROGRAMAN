@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
 #include <iostream.h>
-#include <stdlib.h>
 main()
 {
 char kode_kereta[2],nama_kereta[50],kelas_kereta,nama_kelas_kereta[50],ulang,nama_pemesan[30];
