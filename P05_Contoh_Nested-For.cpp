@@ -3,7 +3,6 @@
 /* ----------------------------- */
 #include <stdio.h>
 #include <conio.h>
-#include <iostream.h>
 main()
 {
 	int a,b;
@@ -11,7 +10,7 @@ main()
 	for (a=1; a<=5; a++)
    {
    	printf("\n");
-      for (b=1; b<=5; b++)
+      for (b=a; b<=5; b++)
       printf(" %d ",a);
    }
 	getch();
