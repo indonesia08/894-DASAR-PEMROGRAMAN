@@ -37,12 +37,12 @@ if (strcmp(kode_kereta,"AG")==0||strcmp(kode_kereta,"ag")==0)
   				ada_kelas=0;
 			}
 		else
-	      {
+	      		{
 				strcpy(nama_kelas_kereta,"0");
-         	tarif =0;
+         			tarif =0;
   				ada_kelas=0;
-	      }
-   }
+			}
+	}
 
 else if (strcmp(kode_kereta,"AL")==0||strcmp(kode_kereta,"al")==0)
 	{
@@ -66,12 +66,12 @@ else if (strcmp(kode_kereta,"AL")==0||strcmp(kode_kereta,"al")==0)
   				ada_kelas=0;
 			}
 		else
-	      {
+			{
 				strcpy(nama_kelas_kereta,"0");
-         	tarif =0;
+         			tarif =0;
   				ada_kelas=0;
-	      }
-   }
+			}
+	}
 
 else if (strcmp(kode_kereta,"PH")==0||strcmp(kode_kereta,"ph")==0)
 	{
@@ -95,17 +95,18 @@ else if (strcmp(kode_kereta,"PH")==0||strcmp(kode_kereta,"ph")==0)
   				ada_kelas=1;
 			}
 		else
-	      {
+			{
 				strcpy(nama_kelas_kereta,"0");
-         	tarif =0;
+         			tarif =0;
   				ada_kelas=0;
-	      }
-   }
+			}
+	}
+
 else
 	{
-	   strcpy(nama_kereta,"0");
+		strcpy(nama_kereta,"0");
 		strcpy(nama_kelas_kereta,"0");
-      tarif =0;
+		tarif =0;
 		ada_kelas=0;
 	}
 
@@ -124,7 +125,7 @@ else
 				cout<<"Kelas kereta ("<<kelas_kereta<<"."<<nama_kelas_kereta<<") tidak tersedia di kereta "<<nama_kereta<<endl;
 			}
 		else
-      	{
+			{
 				cout<<"		PROGRAM TIKET KERETA\n\n";
 				cout<<"__________________________________________________________________________\n";
 				cout<<"\nNama Pemesan 			= ";cin>>nama_pemesan;
@@ -133,13 +134,13 @@ else
 				cout<<"Harga Per Tiket 		= "<<tarif<<endl;
 				cout<<"Jumlah Pemesanan Tiket		= ";cin>>jumlah_tiket;
 				cout<<"Biaya Tambahan Fasilitas	= 0";
-            total_harga =tarif*jumlah_tiket;
+				total_harga =tarif*jumlah_tiket;
 				cout<<"\nPembayaran			= "<<total_harga<<endl;
 				cout<<"Discount			= 0 ";
 				cout<<"\n*****************************************************";
 				cout<<"\nTotal Pembayaran		= "<<total_harga<<endl;
 				cout<<"\nUang Bayar			= ";cin>>uang_bayar;
-            uang_kembali =uang_bayar-total_harga;
+				uang_kembali =uang_bayar-total_harga;
 				cout<<"\nUang Kembali			= "<<uang_kembali<<endl;
 				cout<<"\n*****************************************************\n";
 			}
