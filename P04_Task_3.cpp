@@ -42,8 +42,8 @@ if (strcmp(tipe_kamar,"0")==0)
 	{
 		cout<<"PENGINAPAN PASTI BETAH\n";
 		cout<<"***********************************\n";
-      reload_kode_kamar:
-      cout<<"Kode kamar yang anda masukan salah, ingin input lagi [Y/T]";cin>>ulang;
+		reload_kode_kamar:
+		cout<<"Kode kamar yang anda masukan salah, ingin input lagi [Y/T]";cin>>ulang;
 		if (ulang =='Y' || ulang =='y')
 			{	goto atas;	}
 		else if (ulang =='T' || ulang =='t')
@@ -56,30 +56,30 @@ else
 		cout<<"PENGINAPAN PASTI BETAH\n";
 		cout<<"***********************************\n";
 		cout<<"\nNama Pemesan 		: "<<nama_penyewa<<endl;
-      cout<<"Kode Kamar [A/B/M]	: "<<kode_kamar;
+		cout<<"Kode Kamar [A/B/M]	: "<<kode_kamar;
 		cout<<"\nLama Menginap		: ";cin>>lama_menginap;
-      if (lama_menginap>=7)
-      	{
-         	strcpy(souvenir,"Payung Cantik");
-         }
-      else
-      	{
-         	strcpy(souvenir," - ");
-         }
+		if (lama_menginap>=7)
+			{
+				strcpy(souvenir,"Payung Cantik");
+			}
+		else
+			{
+				strcpy(souvenir," - ");
+			}
 		cout<<"***********************************\n";
-      cout<<"Tipe Kamar		: "<<tipe_kamar;
-      cout<<"\nTipe Kamar		: "<<tipe_kamar;
-      cout<<"\nLama Menginap		: "<<lama_menginap<<" hari";
-      cout<<"\nSouvenir		: "<<souvenir;
-      biaya_sewa = tarif*lama_menginap;
-      cout<<"\nBiaya Sewa		: "<<biaya_sewa;
-      biaya_administrasi=200000;
-      cout<<"\nBiaya Administrasi  	: "<<biaya_administrasi;
-      total_biaya=biaya_sewa+biaya_administrasi;
-      cout<<"\nTotal Biaya		: "<<total_biaya;
+      		cout<<"Tipe Kamar		: "<<tipe_kamar;
+      		cout<<"\nTipe Kamar		: "<<tipe_kamar;
+      		cout<<"\nLama Menginap		: "<<lama_menginap<<" hari";
+      		cout<<"\nSouvenir		: "<<souvenir;
+      		biaya_sewa = tarif*lama_menginap;
+      		cout<<"\nBiaya Sewa		: "<<biaya_sewa;
+      		biaya_administrasi=200000;
+      		cout<<"\nBiaya Administrasi  	: "<<biaya_administrasi;
+      		total_biaya=biaya_sewa+biaya_administrasi;
+      		cout<<"\nTotal Biaya		: "<<total_biaya;
 		cout<<"\n***********************************\n";
 		cout<<"\nUang Bayar		: ";cin>>uang_bayar;
-      uang_kembali=uang_bayar-total_biaya;
+      		uang_kembali=uang_bayar-total_biaya;
 		cout<<"Uang Kembali		: "<<uang_kembali;
 	}
 
