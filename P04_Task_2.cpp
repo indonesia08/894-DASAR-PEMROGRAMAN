@@ -37,11 +37,11 @@ if (strcmp(kode_kereta,"AG")==0||strcmp(kode_kereta,"ag")==0)
   				ada_kelas=0;
 			}
 		else
-      {
+	      {
 				strcpy(nama_kelas_kereta,"0");
          	tarif =0;
   				ada_kelas=0;
-      }
+	      }
    }
 
 else if (strcmp(kode_kereta,"AL")==0||strcmp(kode_kereta,"al")==0)
@@ -66,11 +66,11 @@ else if (strcmp(kode_kereta,"AL")==0||strcmp(kode_kereta,"al")==0)
   				ada_kelas=0;
 			}
 		else
-      {
+	      {
 				strcpy(nama_kelas_kereta,"0");
          	tarif =0;
   				ada_kelas=0;
-      }
+	      }
    }
 
 else if (strcmp(kode_kereta,"PH")==0||strcmp(kode_kereta,"ph")==0)
@@ -95,11 +95,11 @@ else if (strcmp(kode_kereta,"PH")==0||strcmp(kode_kereta,"ph")==0)
   				ada_kelas=1;
 			}
 		else
-      {
+	      {
 				strcpy(nama_kelas_kereta,"0");
          	tarif =0;
   				ada_kelas=0;
-      }
+	      }
    }
 else
 	{
